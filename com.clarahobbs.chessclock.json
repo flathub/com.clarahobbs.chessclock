@@ -19,8 +19,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/cghobbs/chess-clock.git",
-                    "tag" : "v0.1.0",
-                    "commit" : "86646ef459fed6d3045ccc87f11fb5811bbe2875"
+                    "tag" : "v0.2.0",
+                    "commit" : "ea73b53050cb5ef4fd4e61f706c4299c796da23b"
                 }
             ]
         }
