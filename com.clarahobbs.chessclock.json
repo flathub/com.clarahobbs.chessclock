@@ -1,7 +1,7 @@
 {
     "app-id" : "com.clarahobbs.chessclock",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "44",
     "sdk" : "org.gnome.Sdk",
     "command" : "chess-clock",
     "finish-args" : [
@@ -19,8 +19,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/cghobbs/chess-clock.git",
-                    "tag" : "v0.3.1",
-                    "commit" : "63e2d6e8f4d8d03bf873ce7a1036b0cf4c727a94"
+                    "tag" : "v0.4.0",
+                    "commit" : "3a1a9a8fecdf3ae61b0d774528b625e78308e469"
                 }
             ]
         }
