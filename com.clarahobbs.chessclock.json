@@ -1,7 +1,7 @@
 {
     "app-id" : "com.clarahobbs.chessclock",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "chess-clock",
     "finish-args" : [
@@ -11,6 +11,35 @@
         "--socket=wayland"
     ],
     "modules" : [
+	{
+            "name": "gsound",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gsound.git",
+                    "tag": "1.0.3",
+                    "commit": "95d36d60cf53e0e7c5d5325e0f1f4fc765a611ae"
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libcanberra",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
+                            "sha256": "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
+                        }
+                    ],
+                    "config-opts": [
+                        "--disable-alsa",
+                        "--disable-null",
+                        "--disable-oss"
+                    ]
+                }
+            ]
+        },
         {
             "name" : "chess-clock",
             "builddir" : true,
@@ -19,8 +48,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/cghobbs/chess-clock.git",
-                    "tag" : "v0.5.0",
-                    "commit" : "280d79461fe504b00095fe6397f5284c51db7c60"
+                    "tag" : "v0.6.0",
+                    "commit" : "2cf7223696f941c3ad0ba76ccc77095b6951037c"
                 }
             ]
         }
