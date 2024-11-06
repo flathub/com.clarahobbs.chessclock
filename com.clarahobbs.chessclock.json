@@ -49,6 +49,10 @@
                     "type" : "archive",
                     "url" : "https://gitlab.gnome.org/World/chess-clock/-/archive/v0.6.0/chess-clock-v0.6.0.tar.gz",
                     "sha256" : "24cd123b5b2e955762854f38801b32039bad7d1dfa3482e2a0c5ffa5853ea106"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix-appdata.patch"
                 }
             ]
         }

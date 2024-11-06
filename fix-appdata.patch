@@ -1,0 +1,38 @@
+From 6f6b52bffedccda0fdd18875a52be52608fa29ed Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 6 Nov 2024 20:11:06 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+- Fix appdata issues.
+---
+ data/com.clarahobbs.chessclock.appdata.xml.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/data/com.clarahobbs.chessclock.appdata.xml.in b/data/com.clarahobbs.chessclock.appdata.xml.in
+index 93400da..e7dface 100644
+--- a/data/com.clarahobbs.chessclock.appdata.xml.in
++++ b/data/com.clarahobbs.chessclock.appdata.xml.in
+@@ -14,7 +14,7 @@
+ 	  </p>
+ 	</description>
+   <screenshots>
+-    <screenshot>
++    <screenshot type="default">
+       <caption>The main screen, showing timers for the white and black players of a chess game</caption>
+       <image>https://clarahobbs.com/screenshots/chess-clock-0.6-1.png</image>
+     </screenshot>
+@@ -30,10 +30,10 @@
+   <launchable type="desktop-id">com.clarahobbs.chessclock.desktop</launchable>
+   <url type="homepage">https://gitlab.gnome.org/World/chess-clock</url>
+   <url type="bugtracker">https://gitlab.gnome.org/World/chess-clock/-/issues</url>
++  <url type="vcs-browser">https://gitlab.gnome.org/World/chess-clock</url>
+   <developer_name>Clara Hobbs</developer_name>
+   <update_contact>clara_at_clarahobbs.com</update_contact>
+   <custom>
+-    <value key="Purism::form_factor">workstation</value>
+     <value key="Purism::form_factor">mobile</value>
+   </custom>
+   <releases>
+--
+libgit2 1.7.2
+
